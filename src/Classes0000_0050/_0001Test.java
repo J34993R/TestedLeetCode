@@ -1,6 +1,6 @@
 package src.Array;
 
-public class _0001 {
+public class _0001Test {
     /*
     ACCEPTED
     Runtime: 70 ms, faster than 27.59% of Java online submissions for Two Sum.

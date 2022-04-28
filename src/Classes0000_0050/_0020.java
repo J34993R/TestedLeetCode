@@ -44,9 +44,6 @@ public class _0020 {
                     return false;
             }
         }
-        if (comparator.equals("") || stackOpen.size() != 0)
-            return false;
-
-        return true;
+        return !comparator.equals("") && stackOpen.size() == 0;
     }
 }

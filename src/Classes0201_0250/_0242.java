@@ -13,7 +13,7 @@ public class _0242 {
     public boolean isAnagram(String s, String t) {
         long qtdCharS = 0, qtdCharT = 0;
         Character c;
-        String onlyChars = new String();
+        String onlyChars = "";
         String newS = s;
 
         if (s.length() != t.length()){
@@ -22,7 +22,7 @@ public class _0242 {
 
         for (int i = 0; i < s.length(); i++){
             c = s.charAt(i);
-            onlyChars = onlyChars + c.toString();
+            onlyChars = onlyChars + c;
             s = s.replace(s.charAt(i), ' ');
 
         }
@@ -39,10 +39,7 @@ public class _0242 {
 
         }
 
-        if (qtdCharS == qtdCharT){
-            return true;
-        }else
-            return false;
+        return qtdCharS == qtdCharT;
 
     }
 }

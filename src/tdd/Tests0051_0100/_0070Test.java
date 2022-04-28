@@ -26,5 +26,9 @@ public class _0070Test {
         n = 3;
         assertEquals(3, solution.climbStairs(n));
     }
-
+    @Test
+    public void test3(){
+        n = 6;
+        assertEquals(13, solution.climbStairs(n));
+    }
 }

@@ -13,7 +13,7 @@ public class _0014Test {
     private String[] str;
 
     @BeforeClass
-    public void setup(){ solution = new _0014(); };
+    public void setup(){ solution = new _0014(); }
 
     @Test
     public void test1(){

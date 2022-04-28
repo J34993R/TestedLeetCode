@@ -14,22 +14,22 @@ public class _0009Test {
     private int x;
 
     @BeforeClass
-    public void setup(){ solution = new _0009(); }
+    public void setup() {solution = new _0009();}
 
     @Test
-    public void test1(){
+    public void test1() {
         x = 121;
         assertEquals(true, solution.isPalindrome(x));
     }
 
     @Test
-    public void test2(){
+    public void test2() {
         x = -121;
         assertEquals(false, solution.isPalindrome(x));
     }
 
     @Test
-    public void test3(){
+    public void test3() {
         x = 10;
         assertEquals(false, solution.isPalindrome(x));
     }

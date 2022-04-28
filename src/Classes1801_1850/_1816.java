@@ -9,7 +9,7 @@ Memory Usage: 42.9 MB, less than 25.96% of Java online submissions for Truncate 
 public class _1816 {
 
     public String truncateSentence(String s, int k) {
-        String words[] = s.split(" ");
+        String[] words = s.split(" ");
         String ans = "";
 
         for(int i = 0; i < k; i++){

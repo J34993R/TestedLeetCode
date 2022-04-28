@@ -24,8 +24,6 @@ public class _0118Test {
         solution = new _0118();
     }
 
-    ;
-
     @Test
     public void test1() {
         numRows = 5;
