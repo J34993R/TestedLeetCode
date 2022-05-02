@@ -1,13 +1,14 @@
-package src.tdd;
+package src.tdd.Tests0000_0050;
 
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
+import src.Classes0000_0050._0001Test;
 
 import static org.testng.AssertJUnit.assertEquals;
 
 public class _0001Tested {
 
-    private static src.Array._0001Test solution;
+    private static _0001Test solution;
 
     private static int[] expected;
     private static int[] nums;
@@ -16,7 +17,7 @@ public class _0001Tested {
 
     @BeforeClass
     public void setup() {
-        solution = new src.Array._0001Test();
+        solution = new _0001Test();
     }
 
     @Test

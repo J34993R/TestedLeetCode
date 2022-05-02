@@ -1,4 +1,4 @@
-package src.Math;
+package src.Classes0051_0100;
 
 /* Date: 28/04/2022
  * User: Guilherme Alves de Oliveira

@@ -1,8 +1,8 @@
-package src.tdd;
+package src.tdd.Tests1801_1850;
 
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-import src.String._1816;
+import src.Classes1801_1850._1816;
 
 import static org.testng.AssertJUnit.assertEquals;
 

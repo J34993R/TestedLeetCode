@@ -1,14 +1,10 @@
-package src.tdd;
+package src.tdd.Tests0101_0150;
 
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-import src.Array._0118;
-import src.String._0014;
+import src.Classes0101_0150._0118;
 
-import java.util.Collection;
-import java.util.Iterator;
 import java.util.List;
-import java.util.ListIterator;
 
 import static org.testng.AssertJUnit.assertEquals;
 
