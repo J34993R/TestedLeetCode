@@ -2,33 +2,40 @@ package src.tdd.Tests0051_0100;
 
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
+import src.Classes0051_0100._0058;
 import src.Classes0051_0100._0070;
 
 import static org.testng.AssertJUnit.assertEquals;
 
-public class _0070Test {
+public class _0058Test {
 
-    private static _0070 solution;
+    private static _0058 solution;
 
-    private static int n;
+    private static String s;
 
     @BeforeClass
-    public void setup(){ solution = new _0070(); }
+    public void setup(){ solution = new _0058(); }
 
     @Test
     public void test1(){
-        n = 2;
-        assertEquals(2, solution.climbStairs(n));
+        s = "Hello World";
+        assertEquals(5, solution.lengthOfLastWord(s));
     }
 
     @Test
     public void test2(){
-        n = 3;
-        assertEquals(3, solution.climbStairs(n));
+        s = "   fly me   to   the moon  ";
+        assertEquals(4, solution.lengthOfLastWord(s));
     }
     @Test
     public void test3(){
-        n = 6;
-        assertEquals(13, solution.climbStairs(n));
+        s = "luffy is still joyboy";
+        assertEquals(6, solution.lengthOfLastWord(s));
+    }
+
+    @Test
+    public void test4(){
+        s = "a";
+        assertEquals(1, solution.lengthOfLastWord(s));
     }
 }

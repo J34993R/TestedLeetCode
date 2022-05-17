@@ -3,33 +3,28 @@ package src.tdd.Tests0000_0050;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import src.Classes0000_0050._0009;
+import src.Classes0000_0050._0026;
 
 import static org.testng.AssertJUnit.assertEquals;
 
-public class _0009Test {
+public class _0026Test {
 
-    private _0009 solution;
+    private _0026 solution;
 
-    private int x;
+    private int[] nums;
 
     @BeforeClass
-    public void setup() {solution = new _0009();}
+    public void setup() {solution = new _0026();}
 
     @Test
     public void test1() {
-        x = 121;
-        assertEquals(true, solution.isPalindrome(x));
+        nums = new int[] {1,1,2};
+        assertEquals(2, solution.removeDuplicates(nums));
     }
-
     @Test
     public void test2() {
-        x = -121;
-        assertEquals(false, solution.isPalindrome(x));
+        nums = new int[] {0,0,1,1,1,2,2,3,3,4};
+        assertEquals(5, solution.removeDuplicates(nums));
     }
 
-    @Test
-    public void test3() {
-        x = 10;
-        assertEquals(false, solution.isPalindrome(x));
-    }
 }

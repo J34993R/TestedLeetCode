@@ -1,30 +1,40 @@
 package src.Classes0101_0150;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
-public class _0118 {
+public class _0121 {
 
-    public List<List<Integer>> generate(int numRows) {
-        /*
-        ACCEPTED
-        Runtime: 0 ms, faster than 100% of Java online submissions for Pascal's Triangle.
-        Memory Usage: 42.2 MB, less than 22.09% of Java online submissions for Pascal's Triangle.
-         */
-        List<List<Integer>> graph = new ArrayList<>();
+    public int maxProfit(int[] prices) {
 
-        for (int i = 0; i < numRows; i++){
-            List<Integer> lista = new ArrayList<>();
-            for (int j = 0; j < i+1;j++){
-                if (j == 0 || j == i){
-                    lista.add(1);
-                }else {
-                    lista.add(graph.get(i-1).get(j-1) + graph.get(i-1).get(j));
+        int higher = 0;
+        int lower = 0;
+        int sum = 0;
+        LinkedList<Integer> list = new LinkedList<>();
+
+        if(prices.length == 1) {
+            return 0;
+        }
+        for(int i = 0; i < prices.length; i++) {
+            for(int j = i; j < prices.length; j++) {
+                if(prices[i] > prices[j]) {
+
+                } else {
+                    list.add(prices[j] - prices[i]);
                 }
             }
-            graph.add(lista);
+
         }
 
-        return graph;
+        sum = Collections.max(list);
+        if(sum <= 0) {
+            return 0;
+        }
+        return sum;
     }
 }
+
+/*
+7,1,5,3,6,4
+lower = 1
+higher = 7
+*/
