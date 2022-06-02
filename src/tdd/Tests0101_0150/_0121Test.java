@@ -49,6 +49,12 @@ public class _0121Test {
         prices = new int[] {1,2};
         assertEquals(1, solution.maxProfit(prices));
     }
+    @Test
+    public void test6() {
+
+        prices = new int[] {3,2,5,11,0,22};
+        assertEquals(22, solution.maxProfit(prices));
+    }
 }
 
 
