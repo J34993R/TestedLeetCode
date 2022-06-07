@@ -8,6 +8,7 @@ import src.Classes1901_1950._1929;
 import java.util.Arrays;
 
 import static org.testng.AssertJUnit.assertEquals;
+import static org.testng.internal.junit.ArrayAsserts.assertArrayEquals;
 
 public class _1929Test {
 
@@ -24,12 +25,12 @@ public class _1929Test {
     public void test1(){
         nums = new int[] {1,2,1};
         expected = new int[] {1,2,1,1,2,1};
-        assertEquals(expected, solution.getConcatenation(nums));
+        assertArrayEquals(expected, solution.getConcatenation(nums));
     }
     @Test
     public void test2(){
         nums = new int[] {1,3,2,1};
         expected = new int[] {1,3,2,1,1,3,2,1};
-        assertEquals(expected, solution.getConcatenation(nums));
+        assertArrayEquals(expected, solution.getConcatenation(nums));
     }
 }

@@ -5,6 +5,7 @@ import org.testng.annotations.Test;
 import src.Classes0000_0050._0001Test;
 
 import static org.testng.AssertJUnit.assertEquals;
+import static org.testng.internal.junit.ArrayAsserts.assertArrayEquals;
 
 public class _0001Tested {
 
@@ -23,8 +24,9 @@ public class _0001Tested {
     @Test
     public void test1() {
         nums = new int[]{2, 7, 11, 15};
+        expected = new int[]{0, 1};
         target = 9;
-        assertEquals(expected = new int[]{0, 1}, solution.twoSum(nums, target));
+        assertArrayEquals(expected, solution.twoSum(nums, target));
     }
 
     @Test
@@ -32,7 +34,7 @@ public class _0001Tested {
         nums = new int[]{2, 7, 11, 15};
         target = 9;
         expected = new int[]{0, 1};
-        assertEquals(expected, solution.twoSum(nums, target));
+        assertArrayEquals(expected, solution.twoSum(nums, target));
     }
 
     @Test
@@ -40,6 +42,6 @@ public class _0001Tested {
         nums = new int[]{3, 2, 4};
         target = 6;
         expected = new int[]{1, 2};
-        assertEquals(expected, solution.twoSum(nums, target));
+        assertArrayEquals(expected, solution.twoSum(nums, target));
     }
 }
